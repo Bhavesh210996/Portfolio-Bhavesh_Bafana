@@ -1,5 +1,6 @@
 import Section from "../components/UI/Section";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import { FaReact, FaJsSquare, FaGitAlt, FaHtml5 } from "react-icons/fa";
 import { SiNextdotjs, SiRedux, SiReactrouter, SiReactquery, SiSupabase, SiJest } from "react-icons/si";
 
@@ -22,6 +23,14 @@ export const About = () => (
           hands-on experience in scalable <strong>component-based architecture</strong> and efficient <strong>state management</strong> using  <strong>React
           Hooks, Redux, Context API and React Query</strong>
         </p>
+
+        <div className="resume-card">
+          <h3>📄 My Resume</h3>
+          <p>Download my detailed CV</p>
+          <a href="/React-developer-Bhavesh_Bafana.pdf" download className="resume-link">
+            <Download /> Get Resume
+          </a>
+        </div>
       </motion.div>
 
       {/* RIGHT SIDE */}
