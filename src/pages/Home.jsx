@@ -3,6 +3,7 @@ import { DATA } from "../data/data";
 import { useAccentClass } from "../hooks/useAccentClass";
 import { useReveal } from "../hooks/useReveal";
 import { cn } from "../utils/helper";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const controls = useReveal();
@@ -27,8 +28,8 @@ export const Home = () => {
           </p>
 
           <div className="home__cta">
-            <a href="/projects" className="btn btn--primary">View Projects</a>
-            <a href="/contact" className="btn btn--ghost">Contact Me</a>
+            <Link to="/projects" className="btn btn--primary">View Projects</Link>
+            <Link to="/contact" className="btn btn--ghost">Contact Me</Link>
           </div>
         </div>
 
