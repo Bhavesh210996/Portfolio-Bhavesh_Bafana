@@ -1,0 +1,111 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  // background: linear-gradient(180deg, rgba(10, 10, 16, 0.8), rgba(10, 10, 16, 0.4));
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    &__icon {
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  .nav {
+    display: none;
+    gap: 18px;
+
+    &__link {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: transform 0.2s ease, color 0.2s, background 0.2s;
+
+      &:hover {
+        color: var(--text);
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.04);
+      }
+    }
+
+    &--open {
+      display: grid;
+      position: absolute;
+      top: 56px;
+      right: 16px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .iconbtn {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--bg-soft);
+      color: var(--text);
+      cursor: pointer;
+      box-shadow: var(--shadow);
+
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+
+    .hamburger {
+      width: 44px;
+      height: 36px;
+      display: grid;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      span {
+        display: block;
+        height: 2px;
+        background: var(--text);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  @media (min-width: 960px) {
+    .nav {
+      display: flex;
+    }
+
+    .header__actions .hamburger {
+      display: none;
+    }
+  }
+}

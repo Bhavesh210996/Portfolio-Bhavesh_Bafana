@@ -1,0 +1,49 @@
+@import "./about.scss";
+@import "./experience.scss";
+@import "./projects.scss";
+@import "./awards.scss";
+@import "./home.scss";
+@import "./contact.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./global.scss";
+@import "./variables.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+    margin: 0; 
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; 
+    background: var(--bg); 
+    color: var(--text);
+    min-height: calc(100vh - 8vw);
+    height: 100vh;   
+    // width: min(1120px, 92%);
+}
+
+.container { 
+  width: min(1120px, 92%); 
+  margin: 0 auto; 
+}
+.muted { 
+  color: var(--muted); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

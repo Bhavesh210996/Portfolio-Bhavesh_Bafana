@@ -1,0 +1,33 @@
+:root {
+  --bg: #0b0b10;
+  --bg-soft: #101018;
+  --text: #e8e8f0;
+  --muted: #a2a2b3;
+  --card: #12121a;
+  --border: #24243a;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.4);
+  --lightGrey: #a2a2b3;
+  /* accent palettes */
+  --violet-1: #8b5cf6; --violet-2: #22d3ee;
+  --blue-1: #3b82f6;   --blue-2: #06b6d4;
+  --emerald-1: #10b981; --emerald-2: #22d3ee;
+  --amber-1: #f59e0b;  --amber-2: #ef4444;
+  --pink-1: #ec4899;   --pink-2: #8b5cf6;
+}
+
+[data-theme="light"] {
+  --bg: #f7f7fb;
+  --bg-soft: #ffffff;
+  --text: #101010;
+  --muted: #5b5b6b;
+  --card: #ffffff;
+  --border: #e7e7f3;
+  --shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.accent--violet { --a1: var(--violet-1); --a2: var(--violet-2); }
+.accent--blue { --a1: var(--blue-1); --a2: var(--blue-2); }
+.accent--emerald { --a1: var(--emerald-1); --a2: var(--emerald-2); }
+.accent--amber { --a1: var(--amber-1); --a2: var(--amber-2); }
+.accent--pink { --a1: var(--pink-1); --a2: var(--pink-2); }

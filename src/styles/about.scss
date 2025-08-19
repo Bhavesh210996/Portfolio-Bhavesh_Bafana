@@ -1,0 +1,80 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--muted);
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    p { margin-bottom: 16px; }
+  }
+.about__skills {
+  .skills-heading {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text);
+    border-left: 4px solid var(--a1);
+    padding-left: 10px;
+  }
+}
+  &__skills {
+    .skills-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 24px 0 12px;
+      color: var(--a1);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .skill-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      font-weight: 500;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: linear-gradient(135deg, var(--a1), var(--a2));
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      .skill-icon {
+        font-size: 20px;
+      }
+
+      .react { color: #61dafb; }
+      .next { color: white; }
+      .redux { color: #764abc; }
+      .router { color: #f44250; }
+      .query { color: #ff4154; }
+      .js { color: #f7df1e; }
+      .supabase { color: #3ecf8e; }
+      .git { color: #f34f29; }
+      .jest { color: #99425b; }
+    }
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

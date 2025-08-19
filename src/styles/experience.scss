@@ -1,0 +1,30 @@
+#experience{
+    .timeline { 
+        border-left: 2px dashed var(--border); 
+        margin-left: 12px; 
+        padding-left: 18px; 
+        display: grid; gap: 24px; 
+    }
+    .timeline__item { 
+        position: relative; 
+    }
+    .timeline__dot { 
+        position: absolute; 
+        left: -12px; 
+        top: 6px; 
+        width: 14px; 
+        height: 14px; 
+        border-radius: 50%; 
+        background: linear-gradient(135deg, var(--a1), var(--a2)); 
+        box-shadow: 0 0 0 4px rgba(255,255,255,.05); 
+    }
+    .timeline__content{
+        margin-left: 10px;
+    }
+    .timeline__content h3 {
+         margin: 0 0 6px; 
+    }
+    .timeline__content ul { 
+        margin: 10px 0 0 18px; 
+    }
+}
