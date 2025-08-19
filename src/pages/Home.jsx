@@ -27,8 +27,8 @@ export const Home = () => {
           </p>
 
           <div className="home__cta">
-            <a href="projects" className="btn btn--primary">View Projects</a>
-            <a href="contact" className="btn btn--ghost">Contact Me</a>
+            <a href="/projects" className="btn btn--primary">View Projects</a>
+            <a href="/contact" className="btn btn--ghost">Contact Me</a>
           </div>
         </div>
 
