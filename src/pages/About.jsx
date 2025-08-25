@@ -1,3 +1,4 @@
+import { track } from "@vercel/analytics";
 import Section from "../components/UI/Section";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
@@ -27,7 +28,7 @@ export const About = () => (
         <div className="resume-card">
           <h3>📄 My Resume</h3>
           <p>Download my detailed CV</p>
-          <a href="/React-developer-Bhavesh_Bafana.pdf" download className="resume-link">
+          <a href="/React-developer-Bhavesh_Bafana.pdf" download className="resume-link" onClick={() => track("Resume Download")}>
             <Download /> Get Resume
           </a>
         </div>
