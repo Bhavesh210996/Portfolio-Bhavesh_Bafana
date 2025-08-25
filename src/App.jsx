@@ -7,6 +7,7 @@ import { Header } from './components/Header';
 import { AnimatedRoutes } from './Routes/AnimatedRoutes';
 import { Footer } from './components/Footer/Footer';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 const {theme} = useSelector((s) => s.theme);
@@ -17,6 +18,7 @@ const {theme} = useSelector((s) => s.theme);
       <Header />
       <main><AnimatedRoutes /></main>
       <Footer />
+      <Analytics />
       <Toaster position="top-center" gutter={12} containerStyle={{margin: "8px"}} toastOptions={{
         success:{
           duration: 3000,
