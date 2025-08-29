@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion"
 
-export const ProjectModal = ({details}) => {
+export const ProjectModal = ({details}: {details: string[]}) => {
     return (
     <AnimatePresence>
           <motion.div
