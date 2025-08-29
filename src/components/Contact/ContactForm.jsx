@@ -19,7 +19,7 @@ export const ContactForm = () => {
             setLoading(false);
             e.target.reset();
            toast.success("Message sent successfully");
-        },(error) => {
+        },() => {
             setLoading(false);
             toast.error("Error sending message");
         })

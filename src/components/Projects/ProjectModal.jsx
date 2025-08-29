@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion"
 export const ProjectModal = ({details}) => {
     return (
     <AnimatePresence>
-        {/* {hoverVal !== null && ( */}
           <motion.div
             className="card-modal"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -18,7 +17,6 @@ export const ProjectModal = ({details}) => {
               </ul>
             </div>
           </motion.div>
-        {/* )} */}
     </AnimatePresence>
     )
 }

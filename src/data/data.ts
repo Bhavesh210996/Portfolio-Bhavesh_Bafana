@@ -2,6 +2,41 @@ import { details } from "framer-motion/client";
 import { Database, Gauge, PlayCircle, Zap } from "lucide-react";
 import React from "react";
 
+interface contactType {
+  phone: string;
+  email: string;
+  linkedin: string;
+  github: string;
+  portfolio: string;
+}
+
+interface experienceType {
+  company: string;
+  role: string;
+  period: string;
+  bullets: string[];
+}
+
+interface projectType {
+  name: string;
+  description: string;
+  tags: string[];
+  links: { href: string; label: string }[];
+  icon: React.ReactElement;
+  details: string[];
+}
+
+interface DataType {
+  name: string;
+  role: string;
+  contact: contactType;
+  summary: string;
+  skills: string[];
+  experience: experienceType[];
+  projects: projectType[];
+  awards: string[];
+}
+
 export const DATA = {
   name: "Bhavesh Bafana",
   role: "Frontend Developer - React | Javscript | Next.js | Redux | jQuery",
@@ -98,4 +133,4 @@ export const DATA = {
     "Star of the Month — TCS",
     "On‑the‑Spot Award (twice) — TCS",
   ],
-};
+} satisfies DataType;

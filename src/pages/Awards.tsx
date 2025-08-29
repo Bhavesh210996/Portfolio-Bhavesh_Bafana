@@ -1,6 +1,6 @@
 import { Award } from "lucide-react";
-import { DATA } from "../data/data";
-import Section from "../components/UI/Section";
+import { DATA } from "../data/data.js";
+import Section from "../components/UI/Section.jsx";
 
 export const Awards = () => (
   <Section id="awards" title="Awards">

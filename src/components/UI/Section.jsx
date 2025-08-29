@@ -1,9 +1,7 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Section = ({id, title, children }) => {
-  const controls = useAnimation();
-
   return (
     <section id={id} className="section">
       <div className="container">
