@@ -1,9 +1,13 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
-const Section = ({id, title, children }) => {
-  const controls = useAnimation();
+interface SectionProps {
+  id: string;
+  title: string;
+  children: React.ReactNode;
+}
 
+const Section = ({id, title, children } : SectionProps) => {
   return (
     <section id={id} className="section">
       <div className="container">

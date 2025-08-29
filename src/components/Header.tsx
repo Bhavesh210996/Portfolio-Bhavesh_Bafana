@@ -4,10 +4,11 @@ import { cn } from "../utils/helper";
 import { cycleAccent, setMenu, toggleTheme } from "../store/themeSlice";
 import { Link } from "react-router-dom";
 import { ExternalLink, Rocket, Sparkles } from "lucide-react";
+import { RootState } from "../store/store";
 
 export const Header = () => {
   const dispatch = useDispatch();
-  const { menuOpen } = useSelector((s) => s.theme);
+  const { menuOpen } = useSelector((s: RootState) => s.theme);
   const accent = useAccentClass();
   return (
     <header className={cn("header", accent)}>

@@ -7,19 +7,20 @@ import Loader from "../UI/Loader";
 export const ContactForm = () => {
     const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
+        const form = e.currentTarget;
         emailjs.sendForm(
             emailjsSurviceID,
             emailjsTemplateID,
-            e.target,
+            form,
             emailjsPublicID
         ).then(() => {
             setLoading(false);
-            e.target.reset();
+            form.reset();
            toast.success("Message sent successfully");
-        },(error) => {
+        },() => {
             setLoading(false);
             toast.error("Error sending message");
         })
@@ -34,7 +35,7 @@ export const ContactForm = () => {
               <input type="email" name="email" placeholder="Your Email" required />
             </div>
             <div className="form-group">
-              <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
+              <textarea rows={4} name="message" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" className="btn btn--primary">Send Message</button>
         </form>

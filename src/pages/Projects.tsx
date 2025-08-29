@@ -6,7 +6,7 @@ import { useState } from "react";
 import { ProjectModal } from "../components/Projects/ProjectModal";
 
 export const Projects = () => {
-  const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState<Number | null>(null);
 
   return (
     <Section id="projects" title="Projects">

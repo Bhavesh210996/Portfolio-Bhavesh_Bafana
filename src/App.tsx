@@ -8,9 +8,10 @@ import { AnimatedRoutes } from './Routes/AnimatedRoutes';
 import { Footer } from './components/Footer/Footer';
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from '@vercel/analytics/react';
+import { RootState } from './store/store';
 
 function App() {
-const {theme} = useSelector((s) => s.theme);
+const {theme} = useSelector((s: RootState) => s.theme);
   const accent = useAccentClass();
   useEffect(() => { document.documentElement.setAttribute("data-theme", theme); }, [theme]);
   return (

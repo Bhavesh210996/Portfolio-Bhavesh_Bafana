@@ -3,6 +3,7 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
+import React from 'react'
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -11,6 +12,7 @@ export default defineConfig([
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
+      React.configs['jsx-runtime'],
       reactRefresh.configs.vite,
     ],
     languageOptions: {

@@ -3,7 +3,7 @@ import Section from "../components/UI/Section";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { FaReact, FaJsSquare, FaGitAlt, FaHtml5 } from "react-icons/fa";
-import { SiNextdotjs, SiRedux, SiReactrouter, SiReactquery, SiSupabase, SiJest } from "react-icons/si";
+import { SiNextdotjs, SiRedux, SiReactrouter, SiReactquery, SiSupabase, SiJest, SiTypescript } from "react-icons/si";
 
 export const About = () => (
   <Section id="about" title="About">
@@ -45,6 +45,7 @@ export const About = () => (
         <h3 className="skills-title">Frontend & Styling</h3>
         <div className="skills-grid">
           <div className="skill-card"><FaJsSquare className="skill-icon js" /> JavaScript (ES6+)</div>
+          <div className="skill-card"><SiTypescript className="skill-icon js" /> TypeScript</div>
           <div className="skill-card"><FaHtml5 className="skill-icon html5" /> HTML5, CSS3, SCSS, LESS</div>
         </div>
         <h3 className="skills-title">React Ecosystem</h3>
