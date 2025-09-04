@@ -5,7 +5,7 @@ import Section from "../components/UI/Section";
 import { useState } from "react";
 import { ProjectModal } from "../components/Projects/ProjectModal";
 
-export const Projects = () => {
+const Projects = () => {
   const [hovered, setHovered] = useState<Number | null>(null);
 
   return (
@@ -60,3 +60,5 @@ export const Projects = () => {
     </Section>
   );
 };
+
+export default Projects;

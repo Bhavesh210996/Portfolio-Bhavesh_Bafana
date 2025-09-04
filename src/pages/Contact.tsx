@@ -3,7 +3,7 @@ import { DATA } from "../data/data";
 import Section from "../components/UI/Section";
 import { ContactForm } from "../components/Contact/ContactForm";
 
-export const Contact = () => (
+const Contact = () => (
   <Section id="contact" title="Contact">
     <div className="contact-grid">
       <div className="contact-options">
@@ -23,3 +23,5 @@ export const Contact = () => (
     </div>
   </Section>
 );
+
+export default Contact;

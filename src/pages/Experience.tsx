@@ -1,7 +1,7 @@
 import Section from "../components/UI/Section";
 import { DATA } from "../data/data";
 
-export const Experience = () => (
+const Experience = () => (
   <Section id="experience" title="Experience">
     <div className="timeline">
       {DATA.experience.map((exp) => (
@@ -17,3 +17,5 @@ export const Experience = () => (
     </div>
   </Section>
 );
+
+export default Experience;
