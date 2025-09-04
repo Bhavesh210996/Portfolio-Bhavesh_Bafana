@@ -5,7 +5,7 @@ import { Download } from "lucide-react";
 import { FaReact, FaJsSquare, FaGitAlt, FaHtml5 } from "react-icons/fa";
 import { SiNextdotjs, SiRedux, SiReactrouter, SiReactquery, SiSupabase, SiJest, SiTypescript } from "react-icons/si";
 
-export const About = () => (
+const About = () => (
   <Section id="about" title="About">
     <div className="about">
       {/* LEFT SIDE */}
@@ -72,3 +72,5 @@ export const About = () => (
     </div>
   </Section>
 );
+
+export default About;

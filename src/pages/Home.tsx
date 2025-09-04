@@ -5,7 +5,7 @@ import { useReveal } from "../hooks/useReveal";
 import { cn } from "../utils/helper";
 import { Link } from "react-router-dom";
 
-export const Home = () => {
+const Home = () => {
   const controls = useReveal();
   const accent = useAccentClass();
 
@@ -53,3 +53,5 @@ export const Home = () => {
     </section>
   );
 };
+
+export default Home;

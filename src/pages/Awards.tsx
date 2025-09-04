@@ -2,7 +2,7 @@ import { Award } from "lucide-react";
 import { DATA } from "../data/data.js";
 import Section from "../components/UI/Section.jsx";
 
-export const Awards = () => (
+const Awards = () => (
   <Section id="awards" title="Awards">
     <ul className="awardsList">
       {DATA.awards.map((a) => (
@@ -11,3 +11,5 @@ export const Awards = () => (
     </ul>
   </Section>
 );
+
+export default Awards;
