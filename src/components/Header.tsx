@@ -5,10 +5,12 @@ import { cycleAccent, setMenu, toggleTheme } from "../store/themeSlice";
 import { Link } from "react-router-dom";
 import { ExternalLink, Rocket, Sparkles } from "lucide-react";
 import { RootState } from "../store/store";
+import { Button } from "./UI/Button";
+import { ThemeToggle } from "./Header/ThemeToggle";
 
 export const Header = () => {
   const dispatch = useDispatch();
-  const { menuOpen } = useSelector((s: RootState) => s.theme);
+  const { menuOpen, theme } = useSelector((s: RootState) => s.theme);
   const accent = useAccentClass();
   return (
     <header className={cn("header", accent)}>
@@ -29,11 +31,10 @@ export const Header = () => {
           ))}
         </nav>
         <div className="header__actions">
-          <button className="iconbtn" onClick={() => dispatch(toggleTheme())}><Sparkles /></button>
-          <button className="iconbtn" onClick={() => dispatch(cycleAccent())}><ExternalLink /></button>
-          <button className="hamburger" onClick={() => dispatch(setMenu(!menuOpen))}>
-            <span /><span /><span />
-          </button>
+
+          <Button className="iconbtn" onClick={() => dispatch(toggleTheme())}><ThemeToggle themeStyle={theme}/></Button>
+          {/* <Button onClick={() => dispatch(cycleAccent())}><ExternalLink /></Button> */}
+          <Button className="hamburger" onClick={() => dispatch(setMenu(!menuOpen))}><span /><span /><span /></Button>
         </div>
       </div>
     </header>

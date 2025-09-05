@@ -1,5 +1,4 @@
 import { StrictMode } from 'react'
-import './index.css'
 import './styles/main.scss'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'

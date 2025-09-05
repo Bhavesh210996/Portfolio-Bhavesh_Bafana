@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import './App.css'
 import { useEffect } from 'react';
 import { useAccentClass } from './hooks/useAccentClass';
 import { cn } from './utils/helper';

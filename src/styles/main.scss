@@ -32,6 +32,9 @@ body {
 .muted { 
   color: var(--muted); 
 }
+main{
+  min-height: calc(100vh - 8vw);
+}
 
 
 
