@@ -86,19 +86,6 @@ export const DATA = {
       ]
     },
     {
-      name: "Mastercard",
-      description:
-        "Responsive conversion tool with dynamic updates and animated transitions; cross‑browser compatible UI.",
-      tags: ["JavaScript", "SCSS", "HTML"],
-      links: [],
-      icon: React.createElement(Zap),
-      details: [
-        "Developed a responsive Mastercard Currency Conversion page using JavaScript and SCSS.",
-        "Implemented real-time currency conversion logic with JavaScript, enabling accurate and dynamic updates based on user-selected currencies and input values.",
-        "Integrated API/data simulation for currency rates to demonstrate realistic conversion outputs for various currency pairs."
-      ]
-    },
-    {
       name: "Exelon Corporation",
       description:
         "Reusable media components; auto‑play on hover using HTML5 <video> API and React events.",
