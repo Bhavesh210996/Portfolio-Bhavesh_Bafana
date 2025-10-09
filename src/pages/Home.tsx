@@ -40,7 +40,7 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <div className="profile-card">
-            <img src="profile-img.webp" alt="Profile" className="profile-img" />
+            <img src="profile-img.webp" alt="Profile" className="profile-img" fetchPriority="high" />
           </div>
         </motion.div>
       </motion.div>
